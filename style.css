@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrap {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+header {
+  margin-top: 50px;
+  text-align: center;
+}
+header input {
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.labels {
+  background-color: #7ea8f8;
+  justify-content: center;
+  text-align-last: center;
+  display: flex;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.labels div {
+  text-transform: uppercase;
+  width: calc(80% / 5);
+}
+
+.labels div:hover {
+  background-color: rgb(16, 216, 223);
+}
+.lab {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 20px;
+}
+.container ul {
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 1px;
+  border-color: #7ea8f8;
+  border-style: solid;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  text-align-last: center;
+}
+.container ul li {
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 1px;
+  border-color: #7ea8f8;
+  border-style: solid;
+  color: #000000;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  width: calc(80% / 5);
+}
+
+.number {
+  font-size: 15px;
+  padding: 10px;
+  width: 60px !important;
+}
+.labels .number {
+  font-size: 15px;
+  padding: 15px;
+}
+
+@media (max-width: 1280px) {
+  .container ul {
+    font-size: 13px;
+  }
+  .lab {
+    font-size: 15px;
+  }
+  .number {
+    font-size: 13px;
+  }
+  .labels .number {
+    padding: 15px;
+  }
+}
+@media (max-width: 1025px) {
+  .container ul {
+    font-size: 12px;
+  }
+  .lab {
+    font-size: 12px;
+  }
+  .number {
+    font-size: 11px;
+    padding: 5px;
+  }
+  .labels .number {
+    padding: 10px;
+  }
+}
+@media (max-width: 860px) {
+  .wrap {
+    width: 140%;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    font-size: 12px;
+    width: 100vw;
+    background-color: #fff;
+  }
+  .labels {
+    margin-top: 250px;
+  }
+  .container ul li {
+    width: calc((80% - 40px) / 3);
+  }
+  .labels div {
+    width: calc((80% - 40px) / 4);
+  }
+  .labels .number {
+    font-size: 0px;
+    padding: 0px;
+    width: 40px !important;
+  }
+  .labels div:nth-child(2) {
+    width: 20px;
+  }
+  ul li:nth-child(2) {
+    width: 40px;
+    font-size: 9px;
+  }
+}
+@media (max-width: 500px) {
+  .wrap {
+    width: 200%;
+  }
+}

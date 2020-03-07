@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sort</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>Welcome to our client databse</h1>
+        <h2>Feel free to sort any of the columns by pressing its label</h2>
+        <label>What are you looking for?</label>
+        <input class="text" type="text" />
+      </header>
+      <div class="labels">
+        <div class="number"></div>
+        <div class="lab id">id</div>
+        <div class="lab name">name</div>
+        <div class="lab city">city</div>
+        <div class="lab total">total income</div>
+        <div class="lab average">average income</div>
+        <div class="lab lastMonth">last month income</div>
+      </div>
+      <ul class="container"></ul>
+      <script src="client-data.js"></script>
+      <script src="data-render.js"></script>
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>
